@@ -1,8 +1,11 @@
 /* document.addEventListener('DOMContentLoaded', function() {
   var images = [
-      'resources/japan-car.jpg',
-      'resources/woman-car.jpg',
-      'resources/tram-lisbon.jpg'
+      'resources/lamp.jpg',
+      'resources/woman-street.jpg',
+      'resources/sea.jpg',
+      'resources/woman-stairs.jpg',
+      'resources/japan-woman-walking.jpg',
+      'resources/city.jpg'
  
     // Add more image URLs as needed
   ];
@@ -18,7 +21,7 @@
   setInterval(changeBackground, 3000);
 }); */
 
-/* const track = document.getElementById("image-track");
+const track = document.getElementById("image-track");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
@@ -52,7 +55,7 @@ const handleOnMove = e => {
 
 /* -- Had to add extra lines for touch events -- */
 
-/* window.onmousedown = e => handleOnDown(e);
+window.onmousedown = e => handleOnDown(e);
 
 window.ontouchstart = e => handleOnDown(e.touches[0]);
 
@@ -62,4 +65,4 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 
 window.onmousemove = e => handleOnMove(e);
 
-window.ontouchmove = e => handleOnMove(e.touches[0]); */
+window.ontouchmove = e => handleOnMove(e.touches[0]);
