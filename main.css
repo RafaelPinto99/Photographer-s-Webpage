@@ -15,9 +15,10 @@ body, body::-webkit-scrollbar{
 
 nav{
     color: #6C6F7D;
-    margin: 35px;
+    margin: 35px 35px 0;
     border-radius: 30px;
     background-color: beige;
+    position: static;
 }
 
 nav ul{
@@ -59,8 +60,12 @@ nav li:first-child{
     display: grid;
     grid-auto-flow: column;
     gap: 4vmin;
-    transform: translate(50%, 25%);
-    overflow-x: scroll;
+    position: absolute;
+    left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* width: 100vw; */
+    height: 100vh;
 }
 
 .image-track::-webkit-scrollbar{
@@ -75,9 +80,14 @@ nav li:first-child{
     position: relative;
 }
 
-/* .image{
-    overflow: ;
-} */
+.image{
+    position: absolute;
+    /* inset: 0; */
+    top: 50vh;
+    left: 150%;
+    /* left: 40vw; */
+    transform: translate(50%, -50%);
+}
 
 @media(max-width: 799px){
     .hide-on-mobile{
