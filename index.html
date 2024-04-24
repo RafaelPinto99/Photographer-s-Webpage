@@ -17,7 +17,6 @@
       Showcase your walls with unique urban perspectives."
     />
     <link rel="stylesheet" href="main.css" />
-    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -32,7 +31,12 @@
       </nav>
     </header>
     <main>
-      <section class="image-track" id="image-track">
+      <section
+        class="image-track"
+        id="image-track"
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+      >
         <img
           class="image"
           src="resources/lamp.jpg"
@@ -70,6 +74,7 @@
           draggable="false"
         />
       </section>
+      <script src="main.js"></script>
     </main>
   </body>
 </html>
