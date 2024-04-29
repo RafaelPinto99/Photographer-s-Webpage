@@ -14,6 +14,7 @@ body{
     height: 100vh;
     display: flex;
     flex-flow: column;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -39,6 +40,10 @@ nav li{
     margin: 0 1rem;
 }
 
+nav li:last-child{
+    margin: 0 3rem 0 1rem;
+}
+
 nav a{
     display: block;
     text-transform: uppercase;
@@ -58,6 +63,7 @@ nav a:focus{
 }
 
 nav li:first-child{
+    margin-left: 3rem;
     margin-right: auto;
     font-weight: bold;
 }

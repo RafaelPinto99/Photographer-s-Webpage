@@ -21,7 +21,7 @@
   setInterval(changeBackground, 3000);
 }); */
 
-const track = document.getElementById("image-track");
+const track = document.getElementsByClassName("image-track")[0];
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
@@ -52,8 +52,6 @@ const handleOnMove = e => {
     }, { duration: 1200, fill: "forwards" });
   }
 }
-
-/* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);
 
